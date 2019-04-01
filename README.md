@@ -19,14 +19,16 @@ scoop bucket add krproject https://repo.krproject.org/gitlab/krproject/qi-window
 3. 安装工具软件
 
 ```cmd
-scoop install shadowsocks
-scoop install openvpn
-scoop install oraclejdk8u
-scoop install maven
-scoop install nodejs-lts
-scoop install sts
-scoop install vscode
+scoop install krproject/shadowsocks
+scoop install krproject/openssl 
+scoop install krproject/openvpn
+scoop install krproject/oraclejdk8u
+scoop install krproject/maven
+scoop install krproject/nodejs-lts
+scoop install krproject/sts
+scoop install krproject/vscode
 ...
+
 ```
 
 4. 配置工具软件
