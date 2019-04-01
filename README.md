@@ -13,7 +13,7 @@
 2. 添加Bucket
 
 ```cmd
-scoop bucket add krprojet https://repo.krproject.org/gitlab/krproject/qi-windows.git
+scoop bucket add krproject https://repo.krproject.org/gitlab/krproject/qi-windows.git
 ```
 
 3. 安装工具软件

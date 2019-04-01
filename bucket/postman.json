@@ -1,0 +1,49 @@
+{
+    "homepage": "https://www.getpostman.com/",
+    "version": "7.0.7",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.getpostman.com/licenses/postman_eula"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://dl.pstmn.io/download/7.0.7/Postman-win64-7.0.7-full.nupkg#/dl.7z",
+            "hash": "sha1:e842770cfcff0b33628557b9725779b8b054f316"
+        },
+        "32bit": {
+            "url": "https://dl.pstmn.io/download/7.0.7/Postman-win32-7.0.7-full.nupkg#/dl.7z",
+            "hash": "sha1:ccec8ca7bad4f9d84a9ccfe7a3d57e0f70b481b1"
+        }
+    },
+    "extract_dir": "lib\\net45",
+    "bin": "Postman.exe",
+    "shortcuts": [
+        [
+            "Postman.exe",
+            "Postman"
+        ]
+    ],
+    "checkver": {
+        "url": "https://dl.pstmn.io/RELEASES?platform=win64",
+        "re": "Postman-win64-([\\d.]+)-full.nupkg",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dl.pstmn.io/download/$version/Postman-win64-$version-full.nupkg#/dl.7z",
+                "hash": {
+                    "url": "https://dl.pstmn.io/RELEASES?platform=win64",
+                    "jp": "$.releases[*].files[?(@.name=='$basename')].hash"
+                }
+            },
+            "32bit": {
+                "url": "https://dl.pstmn.io/download/$version/Postman-win32-$version-full.nupkg#/dl.7z",
+                "hash": {
+                    "url": "https://dl.pstmn.io/RELEASES?platform=win32",
+                    "jp": "$.releases[*].files[?(@.name=='$basename')].hash"
+                }
+            }
+        }
+    }
+}
