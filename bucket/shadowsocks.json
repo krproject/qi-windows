@@ -1,0 +1,37 @@
+{
+    "description": "A secure socks5 proxy, designed to protect your Internet traffic.",
+    "version": "4.1.6",
+    "homepage": "https://github.com/shadowsocks/shadowsocks-windows",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.1.6/Shadowsocks-4.1.6.zip",
+    "hash": "e9fad6bcba22427d7efb3d9b341d11173659a06cc12670ba9d542aeb670284b8",
+    "bin": "Shadowsocks.exe",
+    "shortcuts": [
+        [
+            "shadowsocks.exe",
+            "Shadowsocks"
+        ]
+    ],
+    "persist": [
+        "gui-config.json",
+        "statistics-config.json",
+        "pac.txt",
+        "user-rule.txt"
+    ],
+    "pre_install": [
+        "function CreateFile ($name, $value = $null) {",
+        "    if (!(Test-Path \"$persist_dir\\$name\")) {",
+        "        Write-Host -ForegroundColor Yellow -BackgroundColor Black \"Create $name for shadowsocks\"",
+        "        New-Item -Force -Path \"$persist_dir\" -Name $name -Value $value",
+        "    }",
+        "}",
+        "'gui-config.json', 'statistics-config.json' | % {CreateFile $_ '{}'}",
+        "'pac.txt', 'user-rule.txt' | % {CreateFile $_}"
+    ],
+    "checkver": {
+        "github": "https://github.com/shadowsocks/shadowsocks-windows"
+    },
+    "autoupdate": {
+        "url": "https://github.com/shadowsocks/shadowsocks-windows/releases/download/$version/Shadowsocks-$version.zip"
+    }
+}
