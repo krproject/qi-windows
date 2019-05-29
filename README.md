@@ -19,8 +19,7 @@ scoop bucket add krproject https://github.com/krproject/qi-windows
 3. 安装工具软件
 
 ```cmd
-scoop install krproject/openssl 
-scoop install krproject/openvpn
+scoop install krproject/typora
 scoop install krproject/oraclejdk8u
 scoop install krproject/maven
 scoop install krproject/nodejs-lts
