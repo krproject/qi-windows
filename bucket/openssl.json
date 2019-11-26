@@ -1,20 +1,23 @@
 {
     "homepage": "https://slproweb.com/products/Win32OpenSSL.html",
-    "version": "1.1.1b",
-    "license": "OpenSSL",
+    "version": "1.1.1d",
+    "license": {
+        "identifier": "OpenSSL|Freeware",
+        "url": "https://www.openssl.org/source/license-openssl-ssleay.txt"
+    },
+    "description": "TLS/SSL toolkit",
     "architecture": {
         "64bit": {
-            "url": "https://slproweb.com/download/Win64OpenSSL-1_1_1b.exe",
-            "hash": "sha512:a0576f772f8ac7f7ab26be0458ed9cedcd5024f1f130bdc41809c4f7d2ffda128ea94bf86898894c1439a3120772ec335f9579d47863ddaa9ae4233548800850"
+            "url": "https://slproweb.com/download/Win64OpenSSL-1_1_1d.exe",
+            "hash": "6afa17d0768cf91b6f69f31fbc67cab1ac2e3f40ccaaadb7a9d6c7fc37b38492"
         },
         "32bit": {
-            "url": "https://slproweb.com/download/Win32OpenSSL-1_1_1b.exe",
-            "hash": "sha512:d4816b90b4ee8fc3fc0499c886f16f239da4f398692d81e523c02423154032490389142a70c0e5ee57b0b39aa1363b89dd59219e22881f52238b0a58ece9e5e6"
+            "url": "https://slproweb.com/download/Win32OpenSSL-1_1_1d.exe",
+            "hash": "414fb64197a60b4167b367a5b7975511231c439b9d0237625450cb87d47550ab"
         }
     },
     "innosetup": true,
     "bin": "bin\\openssl.exe",
-    "env_add_path": "bin",
     "env_set": {
         "OPENSSL_CONF": "$dir\\bin\\cnf\\openssl.cnf"
     },
@@ -30,8 +33,8 @@
         },
         "hash": {
             "mode": "json",
-            "jp": "$.files.['$basename'].sha512",
-            "url": "$baseurl/win32_openssl_hashes.json"
+            "jp": "$.files.['$basename'].sha256",
+            "url": "https://raw.githubusercontent.com/slproweb/opensslhashes/master/win32_openssl_hashes.json"
         }
     }
 }
