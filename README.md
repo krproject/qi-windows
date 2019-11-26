@@ -34,7 +34,7 @@ scoop install krproject/vscode
 # 工具列表
 
 |工具名称|工具描述|功能分类|安装命令|
-|-|-|-|-|-|
+|-|-|-|-|
 |[git](https://git-scm.com/)|分布式版本管理|版本管理|`scoop install git`|
 |[WPS](http://www.wps.cn/)|文档编辑、流程图、思维导图|设计工具|-|
 |[Axure RP](https://www.axure.com/)|原型设计|设计工具|-|
