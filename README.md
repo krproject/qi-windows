@@ -36,15 +36,11 @@ scoop install krproject/vscode
 |工具名称|工具描述|功能分类|安装命令|
 |-|-|-|-|
 |[git](https://git-scm.com/)|分布式版本管理|版本管理|`scoop install git`|
-|[WPS](http://www.wps.cn/)|文档编辑、流程图、思维导图|设计工具|-|
-|[Axure RP](https://www.axure.com/)|原型设计|设计工具|-|
 |[Node](https://nodejs.org)|前端node语言|编程语言|`scoop install krproject/nodejs-lts`|
 |[Java](https://www.java.com)|后端java语言|编程语言|`scoop install krproject/oraclejdk8u`|
 |[Maven](https://maven.apache.org/)|java依赖与编译管理|编程语言|`scoop install krproject/maven`|
-|[UltraEdit](https://www.ultraedit.com/)|文本编辑器|编辑器|-|
 |[VSCode](https://code.visualstudio.com/)|前端开发编辑器|编辑器|`scoop install krproject/vscode`|
-|[Spring Tool Suite](https://spring.io/tools)|后端开发编辑器|编辑器|`scoop install krproject/sts`|
-|[Jaspersoft Studio](https://community.jaspersoft.com/project/jaspersoft-studio)|报表开发编辑器|编辑器|`scoop install krproject/jaspersoft-studio`|
+|[STS](https://spring.io/tools)|后端开发编辑器|编辑器|`scoop install krproject/sts`|
 |[DbVisualizer](https://www.dbvis.com/)|数据库管理与分析|开发工具|`scoop install krproject/dbvis`|
 |[Xshell Plus](https://www.netsarang.com)|ssh及ftp站点管理|开发工具|-|
 |[Docker Desktop](https://www.docker.com/)|镜像管理|开发工具|-|
@@ -52,4 +48,6 @@ scoop install krproject/vscode
 |[Postman](https://www.getpostman.com/)|接口测试工具|测试工具|`scoop install krproject/postman`|
 |[JMeter](https://jmeter.apache.org/)|压力测试工具|测试工具|`scoop install krproject/jmeter`|
 |[Foxmail](https://www.foxmail.com/)|邮件通讯|沟通工具|-|
+|[WPS](http://www.wps.cn/)|文档编辑、流程图、思维导图|设计工具|-|
+|[Axure RP](https://www.axure.com/)|原型设计|设计工具|-|
 
