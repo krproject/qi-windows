@@ -48,6 +48,6 @@ scoop install krproject/vscode
 |[Postman](https://www.getpostman.com/)|接口测试工具|测试工具|`scoop install krproject/postman`|
 |[JMeter](https://jmeter.apache.org/)|压力测试工具|测试工具|`scoop install krproject/jmeter`|
 |[Foxmail](https://www.foxmail.com/)|邮件通讯|沟通工具|-|
-|[WPS](http://www.wps.cn/)|文档编辑、流程图、思维导图|设计工具|-|
+|[WPS](http://www.wps.cn/)|文档编辑、流程图、思维导图|设计工具|`scoop install krproject/wpsoffice`|
 |[Axure RP](https://www.axure.com/)|原型设计|设计工具|-|
 
