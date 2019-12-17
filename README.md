@@ -19,7 +19,6 @@ scoop bucket add krproject https://github.com/krproject/qi-windows
 3. 安装工具软件
 
 ```cmd
-scoop install krproject/typora
 scoop install krproject/sts
 scoop install krproject/vscode
 ...
